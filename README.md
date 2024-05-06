@@ -2,6 +2,12 @@
 
 An automated assistant to summarise the work done each day for a DevOps Engineer
 
+## Usage
+
+You can run the script one-shot by just executing the `main.py` file, or [use a cronjob](#crontab-setup).
+
+The summarised output will be printed, and also saved in a file in `$COMMITS_DIRECTORY/results/$today.txt`
+
 ## Setup
 
 ### Install requirements
