@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Get the commit message (using git show)
+commit_message=$(git show --no-patch --format=%B)
+repo_name=$(basename $(git rev-parse --show-toplevel))
+
+# Create the data directory if it doesn't exist
+mkdir -p ~/data/commits
+
+# Get today's date in DD/MM/YYYY format
+today=$(date +%d-%m-%Y)
+
+# Create the file with content
+file_path=${COMMITS_DIRECTORY}/commits/$today.txt
+file_path=/Users/sebastian.caldarola/data/commits/$today.txt
+
+# Write the information to the file
+echo "$repo_name" >> $file_path
+echo "$commit_message" >> "$file_path"
+echo "---" >> "$file_path"
+
+echo "Information saved to: $file_path"
