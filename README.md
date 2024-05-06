@@ -49,7 +49,7 @@ An example regex would be:
 If you want other cron, you can always use [crontab guru](https://crontab.guru/) 
 
 ## To Do
-
+* Do some code cleaning
 * Add a [Model file](https://github.com/ollama/ollama/blob/main/docs/modelfile.md)
 * Integrate with Calendar app
 * Integrate with Email
